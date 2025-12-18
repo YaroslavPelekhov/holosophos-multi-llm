@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holosophos"
+version = "1.0.0"
+description = "Holosophos Project"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=5.3.1",
+    "types-pyyaml>=5.3.1",
+    "docker>=7.1.0",
+    "fire>=0.7.0",
+    "tqdm>=4.66.0",
+    "types-tqdm>=4.66.0",
+    "gradio==5.29.0",
+    "academia-mcp==1.11.1",
+    "mle-kit-mcp==1.2.3",
+    "codearkt==1.8.20",
+    "pydantic-settings>=2.6.1",
+]
+
+[dependency-groups]
+dev = [
+    "black==25.1.0",
+    "mypy==1.16.0",
+    "flake8==7.2.0",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["holosophos*", "holosophos/agents*"]
+
+[tool.flake8]
+exclude = ["*/__init__.py"]
+ignore = "E203,F403,E501,SIM115,PIE786,W503,E226"
+max-line-length = 120
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+strict = true
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = "*"
+ignore_missing_imports = true
+follow_imports = "skip"
+
+[tool.setuptools.package-data]
+"holosophos" = ["prompts/*.yaml"]
+
+[[tool.mypy.overrides]]
+module = "pydantic.*"
+follow_imports = "skip"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_test_loop_scope = "function"
+testpaths = [
+    "tests"
+]
