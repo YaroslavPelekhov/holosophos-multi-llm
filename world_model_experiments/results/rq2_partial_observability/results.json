@@ -1,0 +1,62 @@
+{
+  "gridworld": {
+    "0.0": {
+      "prediction_error_mean": 0.10398293387770603,
+      "prediction_error_std": 0.03843649816632208,
+      "belief_divergence_mean": 0.9852278184508938,
+      "belief_divergence_std": 0.3950860365463951,
+      "success_rate": 0.7829017964841276
+    },
+    "0.25": {
+      "prediction_error_mean": 0.11154156350028978,
+      "prediction_error_std": 0.04411961239686066,
+      "belief_divergence_mean": 1.3778313041552441,
+      "belief_divergence_std": 0.4818348367991259,
+      "success_rate": 0.6477455889712928
+    },
+    "0.5": {
+      "prediction_error_mean": 0.14488466579995413,
+      "prediction_error_std": 0.047991016491026925,
+      "belief_divergence_mean": 1.4171368281189969,
+      "belief_divergence_std": 0.49473933467761355,
+      "success_rate": 0.4453740687044703
+    },
+    "0.75": {
+      "prediction_error_mean": 0.1482389630441071,
+      "prediction_error_std": 0.05483328655481642,
+      "belief_divergence_mean": 1.7773700416833682,
+      "belief_divergence_std": 0.6188863451743694,
+      "success_rate": 0.27847433353348156
+    }
+  },
+  "cartpole": {
+    "0.0": {
+      "prediction_error_mean": 0.11677597274415588,
+      "prediction_error_std": 0.029554025393527184,
+      "belief_divergence_mean": 1.0412341947482153,
+      "belief_divergence_std": 0.46134287515884687,
+      "success_rate": 0.6118479922318633
+    },
+    "0.25": {
+      "prediction_error_mean": 0.14127784219233572,
+      "prediction_error_std": 0.06913793917467376,
+      "belief_divergence_mean": 1.4815298151512029,
+      "belief_divergence_std": 0.6910878769052344,
+      "success_rate": 0.5321417054947712
+    },
+    "0.5": {
+      "prediction_error_mean": 0.1443270358275831,
+      "prediction_error_std": 0.05772895122222586,
+      "belief_divergence_mean": 1.7897516117684278,
+      "belief_divergence_std": 0.7461208271012676,
+      "success_rate": 0.43377725635611797
+    },
+    "0.75": {
+      "prediction_error_mean": 0.16719237502377815,
+      "prediction_error_std": 0.06831753144719283,
+      "belief_divergence_mean": 2.075754002957644,
+      "belief_divergence_std": 0.8940666424357431,
+      "success_rate": 0.26923977096152135
+    }
+  }
+}
